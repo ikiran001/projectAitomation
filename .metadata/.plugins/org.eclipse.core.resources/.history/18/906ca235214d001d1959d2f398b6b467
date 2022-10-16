@@ -1,0 +1,11 @@
+package com.INB.utils;
+
+public final class DataProviderUtils {
+
+	
+	public static Object[] getData() {
+		
+		
+		return null;
+	} 	
+}

@@ -1,0 +1,12 @@
+package com.INB.Listener;
+
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
+
+public class RetryFailedTests implements IRetryAnalyzer {
+
+	public boolean retry(ITestResult result) {
+				return false;
+	}
+
+}

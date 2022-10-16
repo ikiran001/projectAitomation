@@ -1,0 +1,9 @@
+package com.INB.utils;
+
+public final class ScreenShotUtils {
+	
+	private ScreenShotUtils() {
+		
+	}
+
+}

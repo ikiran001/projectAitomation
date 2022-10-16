@@ -1,0 +1,19 @@
+package com.INB.tests;
+
+import org.testng.annotations.Test;
+
+import com.INB.pageFactory.RetailLogin;
+
+public final class TC_RetailLoginLogout extends BaseTest{
+
+	
+	@Test
+	public void loginLogout() {
+	String title=	new RetailLogin().enterUserName("CIF1").enterPass("Asdf@123").getCaptchaCode().clickOnLoginBtn().clickOnLogout().getTitle();
+		
+		
+		
+		
+		
+	}
+}

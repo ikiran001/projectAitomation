@@ -1,0 +1,15 @@
+package com.INB.utils;
+
+import java.util.List;
+import java.util.Map;
+
+public final class ExcelUtils {
+	private ExcelUtils() {
+		
+	}
+	
+	public static List<Map<String, String>> getTestDetails(){
+		
+	}
+
+}

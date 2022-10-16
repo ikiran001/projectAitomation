@@ -1,0 +1,45 @@
+package com.INB.constants;
+
+import com.INB.utils.ReadPropertyFile;
+
+import enums.ConfigProperties;
+
+public final class FrameworkConstants {                          // final= not to extend
+
+	private FrameworkConstants() {                               //not to create a object 
+
+	}
+	
+	private static final String RESOURCEPATH=System.getProperty("user.dir")+"/src/test/resources";
+	private static final String CONFIGFILEPATH=FrameworkConstants.getResourcepath()+"/config/config.properties";
+	private static final String CHROMEDRIVERPATH=FrameworkConstants.getResourcepath()+"/executables/chromedriver.exe";
+	private static final int    EXPLICITLYWAITTIME=10;
+	private static final String EXTENTREPORTPATH=System.getProperty("user.dir")+"/extent-test-output/index.html";
+	
+	
+	
+	public static String getExtentreportpath() {
+		if(ReadPropertyFile.get(ConfigProperties.OVERRIDEREPORTS).equalsIgnoreCase("yes")) {
+			return EXTENTREPORTPATH+System.currentTimeMillis()+"index.html";
+		}
+		return EXTENTREPORTPATH;
+	}
+
+	public static String getConfigfilepath() {
+		return CONFIGFILEPATH;
+	}
+
+	public static int getExplicitlywaittime() {
+		return EXPLICITLYWAITTIME;
+	}
+
+	public static String getResourcepath() {
+		return RESOURCEPATH;
+	}
+
+
+	public static String getChromeDriverPath() {
+		return CHROMEDRIVERPATH;
+		
+	}
+}

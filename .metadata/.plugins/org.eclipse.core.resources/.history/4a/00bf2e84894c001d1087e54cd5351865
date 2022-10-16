@@ -1,0 +1,18 @@
+url=https://www.google.com
+rurl=https://cedgeuatapp.in/OnlineSPCB/login#
+curl=https://cedgeuatapp.in/OnlineSPCB/corpLogin
+
+
+#Dynamic reports yes or no
+#if no ,reports will have name as currenttime+index.html
+#if yes  ,reports will nhave name as index.html 
+overridereports=yes
+
+#pass test screenshots  yes or no
+passedstepsscreenshots=yes
+
+#failed test screenshots  yes or no
+failedtestscreenshots=yes
+
+#skipped test screenshots yes or no
+skippedtestscreenshots=yes

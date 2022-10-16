@@ -1,0 +1,21 @@
+
+q
+Asrc/test/java/com/inetbanking/PageObjects/CorporateLoginPage.java,a\c\aca601d2fb08f25927ab08f920aa2655d528470c
+f
+6src/test/java/com/inetbanking/testCases/BaseClass.java,2\0\20dc6cbcdd31b7b5813145c3f6de91359a890081
+r
+Bsrc/test/java/com/inetbanking/utilities/AnnotationTransformer.java,9\2\9293b6b401193121733ebf7788fe078792c35819
+O
+Configuration/config.properties,1\4\1495b43b2e981bf4aa9f0453cc5916299c9f4603
+d
+4src/test/java/com/inetbanking/utilities/XLUtils.java,9\1\9167a7bc49d1a711d9fe90f3df9bf8e6e58c0d5f
+g
+7src/test/java/com/inetbanking/utilities/TestNGMain.java,2\a\2a6423dd9e0008268e868c8585ea30bc92fb2751
+i
+9src/test/java/com/inetbanking/testCases/TC_LoginPage.java,3\7\37739249b5c4ba466714a6dbfec40de55c1cb8ce
+g
+7src/test/java/com/inetbanking/utilities/ReadConfig.java,d\3\d3671b201222c1aefbb1b84f372e0670eb94d370
+n
+>src/test/java/com/inetbanking/PageObjects/RetailLoginPage.java,f\8\f800299c9ba649ebf6e6ce24433424a69074fa48
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

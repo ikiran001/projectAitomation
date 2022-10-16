@@ -1,0 +1,13 @@
+package enums;
+
+public enum ConfigProperties {
+	URL,
+	RURL,
+	OVERRIDEREPORTS,
+	passestestscreenshots,
+	PASSEDTESTSCREENSHOTS,
+	FAILEDTESTSCREENSHOTS,
+	SKIPPEDTESTSCREENSHOTS,
+	CURL;
+
+}

@@ -1,0 +1,15 @@
+package com.INB.tests;
+
+import org.testng.annotations.Test;
+
+public final class TC_RetailLoginLogout {
+
+	
+	@Test
+	public void loginLogout() {
+		
+		
+		
+		
+	}
+}

@@ -1,0 +1,19 @@
+package com.INB.pageFactory;
+
+import org.openqa.selenium.By;
+
+import com.INB.driver.DriverManager;
+
+public final class HomePageRetail extends BasePage {
+	
+	private final By retailLogout=By.xpath("//*[@id=\"bs-example-navbar-collapse-1\"]/ul/li[3]/a");
+	
+
+	
+	public RetailLogin clickOnLogout() {
+		DriverManager.getDriver().findElement(retailLogout).click();
+		return new RetailLogin();
+		acceptAlert()
+		
+	}
+}

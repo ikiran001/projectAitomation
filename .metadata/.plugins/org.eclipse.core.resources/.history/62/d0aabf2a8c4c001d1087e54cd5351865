@@ -1,0 +1,20 @@
+#Retail login-- https://cedgeuatapp.in/OnlineSPCB/login#
+#Corporate Login -- https://cedgeuatapp.in/OnlineSPCB/corpLogin
+rurl=https://cedgeuatapp.in/OnlineSPCB/login#
+curl=https://cedgeuatapp.in/OnlineSPCB/corpLogin
+
+
+
+#Dynamic reports yes or no
+#if no ,reports will have name as current time + index.html
+#if yes  ,reports will have name as index.html 
+overridereports=yes
+
+#pass steps screenshots  yes or no
+passedstepsscreenshots=no
+
+#failed steps screenshots  yes or no
+failedtestscreenshots=no
+
+#skipped steps screenshots yes or no
+skippedtestscreenshots=yes

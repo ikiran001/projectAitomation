@@ -1,0 +1,7 @@
+package com.INB.reports;
+
+public final class ExtentReport {
+private ExtentReport() {
+	
+}
+}

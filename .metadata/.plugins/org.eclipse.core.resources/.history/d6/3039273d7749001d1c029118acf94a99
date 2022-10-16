@@ -1,0 +1,57 @@
+package com.INB.pageFactory;
+
+import org.openqa.selenium.By;
+
+
+import com.INB.driver.DriverManager;
+
+import enums.WaitStrategy;
+
+public final  class RetailLogin extends BasePage {
+
+	private final By retailLoginUserName=By.xpath("//input[@name='username']");
+	private final By retailLoginPass=By.xpath("//input[@name='password']");
+	private final By captchaField =By.xpath("//input[@id='txtInput']");
+	private final By captchaImage=By.xpath("//*[@id=\"mainCaptcha\"]");
+	private final By loginBtn=By.xpath("//button[@id='doLogin']");
+
+
+	public RetailLogin enterUserName(String userName , String input ,WaitStrategy wait) {
+				sendKeys(retailLoginUserName , userName ,wait.VISIBLE);
+		return this;
+	}
+
+	public RetailLogin enterPass(String pass,WaitStrategy wait) {
+		
+		sendKeys(retailLoginPass,pass, wait.PRESENCE);
+		return this;
+
+	}
+
+	public RetailLogin getCaptchaCode() {
+
+		DriverManager.getDriver().findElement(captchaField).sendKeys(DriverManager
+				.getDriver().findElement(captchaImage).getAttribute("value"));
+		return this;
+	}
+
+	public HomePageRetail clickOnLoginBtn() {
+		click(loginBtn , WaitStrategy.CLICKABLE);
+		return new HomePageRetail();
+
+	}
+
+	public String getTitle() {
+		return getPageTitle();
+	}
+
+
+
+
+
+
+
+
+
+
+}

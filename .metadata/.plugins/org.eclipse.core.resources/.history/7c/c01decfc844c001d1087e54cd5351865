@@ -1,0 +1,50 @@
+package com.INB.reports;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+import com.INB.driver.DriverManager;
+import com.INB.utils.ReadPropertyFile;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.observer.entity.MediaEntity;
+
+
+import enums.ConfigProperties;
+
+public final class ExtentManager {
+	private ExtentManager() {
+	}
+	
+	
+	private static ThreadLocal<ExtentTest> extTest=new ThreadLocal<ExtentTest>();
+
+	
+	
+	 static ExtentTest getExtTest() {
+		return extTest.get();
+	}
+
+	 static void setExtTest(ExtentTest test) {
+		extTest.set(test);
+	}
+	
+	 static void unload() {
+		extTest.remove();
+	}
+	 
+	 public static void pass(String message , boolean isScreenshotNeeded) {
+		 if(ReadPropertyFile.get(ConfigProperties.PASSEDTESTSCREENSHOTS).equalsIgnoreCase("yes")  
+				 && 	isScreenshotNeeded ) {
+			 ExtentManager.getExtTest().pass(message, MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64Image()));
+		 }
+	 }
+	 
+	 public static String getBase64Image() {
+		 return ((TakesScreenshot)DriverManager.getDriver()).getScreenshotAs(OutputType.BASE64);
+	 }
+	
+	
+	
+
+}

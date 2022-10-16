@@ -1,0 +1,47 @@
+package com.INB.utils;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import com.INB.constants.FrameworkConstants;
+
+public final class ExcelUtils {
+	private ExcelUtils() {
+
+	}
+
+	public static List<Map<String, String>> getTestDetails(){
+
+		FileInputStream fs;
+		try {
+			fs = new FileInputStream(FrameworkConstants.getExcelFilePath());
+			XSSFWorkbook workbook=new XSSFWorkbook(fs);
+			String sheetName="RUNMANAGER";
+			XSSFSheet sheet=workbook.getSheet(sheetName);
+			
+			Map<String ,String> map=null;
+			int lastRowNum=sheet.getLastRowNum();
+			int lastCellNum=sheet.getRow(0).getLastCellNum();
+			
+			
+			
+		} catch (FileNotFoundException e1) {
+
+			e1.printStackTrace();
+		}
+		catch (IOException e) {
+
+			e.printStackTrace();
+		}
+		return null;
+
+	}
+	
+
+}

@@ -1,0 +1,5 @@
+package com.INB.tests;
+
+public class TC_RetailLoginLogout {
+
+}

@@ -1,0 +1,14 @@
+package com.INB.utils;
+
+import java.util.List;
+import java.util.Map;
+
+public final class DataProviderUtils {
+
+	
+	public static Object[] getData() {
+		List<Map<String, String>> list=ExcelUtils.getTestDetails("DATA");
+		
+		return null;
+	} 	
+}

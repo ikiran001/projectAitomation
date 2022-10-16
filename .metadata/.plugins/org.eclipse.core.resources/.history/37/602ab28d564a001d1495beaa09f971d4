@@ -1,0 +1,5 @@
+package com.INB.reports;
+
+public class ExtentLogger {
+
+}

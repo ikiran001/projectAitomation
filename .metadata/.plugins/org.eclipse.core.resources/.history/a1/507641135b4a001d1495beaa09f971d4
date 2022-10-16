@@ -1,0 +1,37 @@
+package com.INB.pageFactory;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import com.INB.Factories.ExplicitWaitFactory;
+
+import com.INB.driver.DriverManager;
+
+import enums.WaitStrategy;
+
+public class BasePage {
+	
+
+	
+	protected void click(By by , WaitStrategy waitStrategy , String elementname) {
+		WebElement element=	ExplicitWaitFactory.performExplicitWait(waitStrategy, by);
+		element.click();
+	}
+	
+	protected void sendKeys(By by, String value,WaitStrategy waitStrategy) {
+		WebElement element=ExplicitWaitFactory.performExplicitWait(waitStrategy, by);
+		element.sendKeys(value);
+	}
+	
+	protected String getPageTitle() {
+		return DriverManager.getDriver().getTitle();
+	}
+	
+	
+	protected void acceptAlert() {
+		DriverManager.getDriver().switchTo().alert().accept();
+	}
+	
+	
+
+}
