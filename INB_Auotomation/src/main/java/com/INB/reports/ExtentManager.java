@@ -12,7 +12,7 @@ public final class ExtentManager {
 
 	
 	
-	 static ExtentTest getExtTest() {
+	 static ExtentTest getExtTest() { //default : it can only access within the package
 		return extTest.get();
 	}
 

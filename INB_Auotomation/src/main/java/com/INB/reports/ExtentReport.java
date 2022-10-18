@@ -10,6 +10,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import enums.CategoryType;
+
 public final class ExtentReport {
 	private ExtentReport() {
 
@@ -42,4 +44,16 @@ public final class ExtentReport {
 		ExtentManager.setExtTest(extent.createTest(testCaseName)); //to create a test
 
 	}
+
+	public static void addAuthors(String [] authors){
+		for(String temp:authors) {
+			ExtentManager.getExtTest().assignAuthor(temp);}
+	}
+
+	public static void addCategory(CategoryType [] category){
+		for(CategoryType temp:category) {
+			ExtentManager.getExtTest().assignCategory(temp.toString());}
+	}
+
+
 }

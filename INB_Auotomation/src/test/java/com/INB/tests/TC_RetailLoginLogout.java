@@ -3,7 +3,11 @@ package com.INB.tests;
 import java.util.Map;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
+
+import com.INB.Annotations.FrameworkAnnotation;
 import com.INB.pageFactory.RetailLogin;
+
+import enums.CategoryType;
 
 
 
@@ -11,7 +15,7 @@ import com.INB.pageFactory.RetailLogin;
 
 public final class TC_RetailLoginLogout extends BaseTest{
 
-
+   @FrameworkAnnotation(author = { "kiran" }, category = { CategoryType.SMOKE })
 	@Test()
 	public void loginLogout(Map<String , String> data) throws Exception {
 
@@ -25,7 +29,7 @@ public final class TC_RetailLoginLogout extends BaseTest{
 	}
 
 
-
+    @FrameworkAnnotation(author = { "Kiran" }, category = { CategoryType.SMOKE })
 	@Test()
 	public void test1(Map<String , String> data) throws Exception {
 

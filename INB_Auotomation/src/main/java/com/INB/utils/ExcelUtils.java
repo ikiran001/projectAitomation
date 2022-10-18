@@ -54,6 +54,9 @@ public final class ExcelUtils {
 
 			e.printStackTrace();
 		}
+		catch(NullPointerException n) {
+			n.getLocalizedMessage();
+		}
 
 		finally {
 			try {
