@@ -1,12 +1,12 @@
 
-x	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(ğ•ˆ“8¿œ‹Èº0HRMAJORZ
+t	java:S1253"<This block of commented-out lines of code should be removed.(èÏçÈşÿÿÿÿ8Ÿë‹Èº0HÕ¢RMAJORZ
 CODE_SMELL
-l
-java:S2864"4Iterate over the "entrySet" instead of the "keySet".(ßäâõşÿÿÿÿ8ÆÙÿÇº0HRMAJORZ
+~	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(«ôãïûÿÿÿÿ8Á™·Çº0HÙ¢RMAJORZ
 CODE_SMELL
-}	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(«ôãïûÿÿÿÿ8Á™·Çº0HRMAJORZ
+m
+java:S2864"4Iterate over the "entrySet" instead of the "keySet".(ßäâõşÿÿÿÿ8ÆÙÿÇº0HÚ¢RMAJORZ
 CODE_SMELL
-…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Â€Ó‡HRMINORZ
+y	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(ğ•ˆ“8¿œ‹Èº0HÛ¢RMAJORZ
 CODE_SMELL
-s	java:S1253"<This block of commented-out lines of code should be removed.(èÏçÈşÿÿÿÿ8Ÿë‹Èº0H‘RMAJORZ
+†	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Â€Ó‡HÜ¢RMINORZ
 CODE_SMELL

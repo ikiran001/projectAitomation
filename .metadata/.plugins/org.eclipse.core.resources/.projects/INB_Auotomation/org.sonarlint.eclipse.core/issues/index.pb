@@ -50,3 +50,9 @@ i
 9src/main/java/com/INB/Listener/AnnotationTransformer.java,1\7\1708e5b34b0513846b76b0349b199ee0e2107ab8
 d
 4src/main/java/com/INB/Listener/RetryFailedTests.java,7\8\7813b4b2d0469867c8ba039048137f2500bf8ab3
+U
+%src/main/java/enums/CategoryType.java,6\7\67998e3bdde37823588e81271319e7fde2e876b9
+j
+:src/main/java/com/INB/Annotations/FrameworkAnnotation.java,b\6\b697e91e2801bfe07d56e71bf86df4e1bc2c9d84
+V
+&src/test/resources/excel/testdata.xlsx,5\1\51a5a2bf2d9854269e3e3f4b8d7776029399a664

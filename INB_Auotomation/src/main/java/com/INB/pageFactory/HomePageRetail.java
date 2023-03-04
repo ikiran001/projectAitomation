@@ -1,6 +1,9 @@
 package com.INB.pageFactory;
 
 import org.openqa.selenium.By;
+
+
+
 import enums.WaitStrategy;
 
 public final class HomePageRetail extends BasePage {

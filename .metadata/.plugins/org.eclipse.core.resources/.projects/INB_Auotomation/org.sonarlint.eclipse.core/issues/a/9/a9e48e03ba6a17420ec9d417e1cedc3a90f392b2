@@ -1,33 +1,33 @@
 
-m
-java:S1161'":Add the "@Override" annotation above this method signature(û„Úª8³²‚ë¼0HıRMAJORZ
+s
+java:S1161;":Add the "@Override" annotation above this method signature(–é¹¦ùÿÿÿÿ8³²‚ë¼0HÎ¡RMAJORZ
 CODE_SMELL
-r
-java:S1161F":Add the "@Override" annotation above this method signature(şîÜªøÿÿÿÿ8³²‚ë¼0HÿRMAJORZ
+n
+java:S1161(":Add the "@Override" annotation above this method signature(û„Úª8³²‚ë¼0HĞ¡RMAJORZ
 CODE_SMELL
-Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…™ĞşşÿÿÿÿHRMINORZ
+s
+java:S1161/":Add the "@Override" annotation above this method signature(ŒŞÓÉúÿÿÿÿ8³²‚ë¼0HÒ¡RMAJORZ
 CODE_SMELL
-r
-java:S1161":Add the "@Override" annotation above this method signature(Ì­éÿÿÿÿÿ8³²‚ë¼0H‚RMAJORZ
+s
+java:S1161":Add the "@Override" annotation above this method signature(Ì­éÿÿÿÿÿ8³²‚ë¼0HÔ¡RMAJORZ
 CODE_SMELL
-r
-java:S11618":Add the "@Override" annotation above this method signature(–é¹¦ùÿÿÿÿ8³²‚ë¼0H„RMAJORZ
+½
+java:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şîÜªøÿÿÿÿ8ä¦„ë¼0HÖ¡RCRITICALZ
 CODE_SMELL
-m
-java:S1161":Add the "@Override" annotation above this method signature(á•¦á8³²‚ë¼0H†RMAJORZ
+n
+java:S1161":Add the "@Override" annotation above this method signature(á•¦á8³²‚ë¼0HØ¡RMAJORZ
 CODE_SMELL
-r
-java:S1161,":Add the "@Override" annotation above this method signature(ŒŞÓÉúÿÿÿÿ8³²‚ë¼0HˆRMAJORZ
+‹	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…™ĞşşÿÿÿÿHÚ¡RMINORZ
 CODE_SMELL
-·
-java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(·Å¾­8ä¦„ë¼0HŠRCRITICALZ
+n
+java:S1161D":Add the "@Override" annotation above this method signature(·Å¾­8³²‚ë¼0HÛ¡RMAJORZ
 CODE_SMELL
-¼
-java:S1186F"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şîÜªøÿÿÿÿ8ä¦„ë¼0HŒRCRITICALZ
+s
+java:S1161I":Add the "@Override" annotation above this method signature(şîÜªøÿÿÿÿ8³²‚ë¼0Hİ¡RMAJORZ
 CODE_SMELL
-m
-java:S11611":Add the "@Override" annotation above this method signature(Åé8³²‚ë¼0HRMAJORZ
+¸
+java:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(·Å¾­8ä¦„ë¼0Hß¡RCRITICALZ
 CODE_SMELL
-m
-java:S1161A":Add the "@Override" annotation above this method signature(·Å¾­8³²‚ë¼0HRMAJORZ
+n
+java:S11614":Add the "@Override" annotation above this method signature(Åé8³²‚ë¼0Há¡RMAJORZ
 CODE_SMELL

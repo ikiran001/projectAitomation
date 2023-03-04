@@ -26,7 +26,7 @@ public final class ExcelUtils {
 		try {
 			fs = new FileInputStream(FrameworkConstants.getExcelFilePath());
 			XSSFWorkbook workbook=new XSSFWorkbook(fs);
-			
+
 			XSSFSheet sheet=workbook.getSheet(sheetName);
 
 			Map<String ,String> map=null;
@@ -71,7 +71,7 @@ public final class ExcelUtils {
 			}
 		}
 
-
+		System.out.println(list);
 		return list;
 
 	}

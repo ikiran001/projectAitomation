@@ -1,6 +1,6 @@
 
-r
-java:S1118":Add a private constructor to hide the implicit public one.(Öñõœúÿÿÿÿ8¢²¬½¼0HÝRMAJORZ
+†	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³Áï¤HÇ¡RMINORZ
 CODE_SMELL
-…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³Áï¤HÞRMINORZ
+s
+java:S1118":Add a private constructor to hide the implicit public one.(Öñõœúÿÿÿÿ8¢²¬½¼0HÈ¡RMAJORZ
 CODE_SMELL

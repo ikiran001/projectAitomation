@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">2 methods,  2 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.INB.tests.TC_RetailLoginLogout" class="method navigator-link" hash-for-method="loginLogout({password=Asdf@123, testname=loginLogout, execute=yes, browser=microsoft, username=CIF1})">loginLogout({password=Asdf@123, testname=loginLogout, execute=yes, browser=microsoft, username=CIF1})</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.INB.tests.TC_RetailLoginLogout" class="method navigator-link" hash-for-method="loginLogout({password=Asdf@123, testname=loginLogout, execute=yes, browser=chrome, username=spcb})">loginLogout({password=Asdf@123, testname=loginLogout, execute=yes, browser=chrome, username=spcb})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.INB.tests.TC_RetailLoginLogout" class="method navigator-link" hash-for-method="test1({password=Asdf@123, testname=test1, execute=yes, browser=firefox, username=CIF2})">test1({password=Asdf@123, testname=test1, execute=yes, browser=firefox, username=CIF2})</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.INB.tests.TC_RetailLoginLogout" class="method navigator-link" hash-for-method="test1({password=Asdf@123, testname=test1, execute=yes, browser=chrome, username=spcb})">test1({password=Asdf@123, testname=test1, execute=yes, browser=chrome, username=spcb})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -124,52 +124,75 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.INB.tests.TC_RetailLoginLogout</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginLogout({password=Asdf@123, testname=loginLogout, execute=yes, browser=microsoft, username=CIF1})">
-                  </a> <!-- loginLogout({password=Asdf@123, testname=loginLogout, execute=yes, browser=microsoft, username=CIF1}) -->
+                  <a name="loginLogout({password=Asdf@123, testname=loginLogout, execute=yes, browser=chrome, username=spcb})">
+                  </a> <!-- loginLogout({password=Asdf@123, testname=loginLogout, execute=yes, browser=chrome, username=spcb}) -->
                   <span class="method-name">loginLogout</span>
-                  <span class="parameters">({password=Asdf@123, testname=loginLogout, execute=yes, browser=microsoft, username=CIF1})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id=&quot;bs-example-navbar-collapse-1&quot;]/ul/li[3]/a (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.INB.Factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:24)
-	at com.INB.pageFactory.BasePage.click(BasePage.java:18)
-	at com.INB.pageFactory.HomePageRetail.clickOnLogout(HomePageRetail.java:13)
-	at com.INB.tests.TC_RetailLoginLogout.loginLogout(TC_RetailLoginLogout.java:24)
+                  <span class="parameters">({password=Asdf@123, testname=loginLogout, execute=yes, browser=chrome, username=spcb})</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 110.0.5481.100 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-L9LVG34&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: Driver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00DEDF13+2219795]
+	Ordinal0 [0x00D82841+1779777]
+	Ordinal0 [0x00C9423D+803389]
+	Ordinal0 [0x00CB64AC+943276]
+	Ordinal0 [0x00CB19F0+924144]
+	Ordinal0 [0x00CAF179+913785]
+	Ordinal0 [0x00CE36B9+1128121]
+	Ordinal0 [0x00CE331A+1127194]
+	Ordinal0 [0x00CDE616+1107478]
+	Ordinal0 [0x00CB7F89+950153]
+	Ordinal0 [0x00CB8F56+954198]
+	GetHandleVerifier [0x010E2CB2+3040210]
+	GetHandleVerifier [0x010D2BB4+2974420]
+	GetHandleVerifier [0x00E86A0A+565546]
+	GetHandleVerifier [0x00E85680+560544]
+	Ordinal0 [0x00D89A5C+1808988]
+	Ordinal0 [0x00D8E3A8+1827752]
+	Ordinal0 [0x00D8E495+1827989]
+	Ordinal0 [0x00D980A4+1867940]
+	BaseThreadInitThunk [0x75D500F9+25]
+	RtlGetAppContainerNamedObjectPath [0x779F7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x779F7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.INB.driver.Driver.initDriver(Driver.java:23)
+	at com.INB.tests.BaseTest.setUp(BaseTest.java:27)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;bs-example-navbar-collapse-1&quot;]/ul/li[3]/a&quot;}
-  (Session info: MicrosoftEdge=106.0.1370.47)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-L9LVG34&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 106.0.1370.47, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59748}, msedge: {msedgedriverVersion: 106.0.1370.47 (4e0bb7311a0a..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d3dfad63a481b439bd59c11ab4359e63
-*** Element info: {Using=xpath, value=//*[@id=&quot;bs-example-navbar-collapse-1&quot;]/ul/li[3]/a}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 19 more
-... Removed 16 stack frames
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (check login logout functionality )                  </em>
@@ -177,50 +200,74 @@ Session ID: d3dfad63a481b439bd59c11ab4359e63
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test1({password=Asdf@123, testname=test1, execute=yes, browser=firefox, username=CIF2})">
-                  </a> <!-- test1({password=Asdf@123, testname=test1, execute=yes, browser=firefox, username=CIF2}) -->
+                  <a name="test1({password=Asdf@123, testname=test1, execute=yes, browser=chrome, username=spcb})">
+                  </a> <!-- test1({password=Asdf@123, testname=test1, execute=yes, browser=chrome, username=spcb}) -->
                   <span class="method-name">test1</span>
-                  <span class="parameters">({password=Asdf@123, testname=test1, execute=yes, browser=firefox, username=CIF2})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id=&quot;bs-example-navbar-collapse-1&quot;]/ul/li[3]/a (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.INB.Factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:24)
-	at com.INB.pageFactory.BasePage.click(BasePage.java:18)
-	at com.INB.pageFactory.HomePageRetail.clickOnLogout(HomePageRetail.java:13)
-	at com.INB.tests.TC_RetailLoginLogout.test1(TC_RetailLoginLogout.java:38)
+                  <span class="parameters">({password=Asdf@123, testname=test1, execute=yes, browser=chrome, username=spcb})</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 110.0.5481.100 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-L9LVG34&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: Driver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00DEDF13+2219795]
+	Ordinal0 [0x00D82841+1779777]
+	Ordinal0 [0x00C9423D+803389]
+	Ordinal0 [0x00CB64AC+943276]
+	Ordinal0 [0x00CB19F0+924144]
+	Ordinal0 [0x00CAF179+913785]
+	Ordinal0 [0x00CE36B9+1128121]
+	Ordinal0 [0x00CE331A+1127194]
+	Ordinal0 [0x00CDE616+1107478]
+	Ordinal0 [0x00CB7F89+950153]
+	Ordinal0 [0x00CB8F56+954198]
+	GetHandleVerifier [0x010E2CB2+3040210]
+	GetHandleVerifier [0x010D2BB4+2974420]
+	GetHandleVerifier [0x00E86A0A+565546]
+	GetHandleVerifier [0x00E85680+560544]
+	Ordinal0 [0x00D89A5C+1808988]
+	Ordinal0 [0x00D8E3A8+1827752]
+	Ordinal0 [0x00D8E495+1827989]
+	Ordinal0 [0x00D980A4+1867940]
+	BaseThreadInitThunk [0x75D500F9+25]
+	RtlGetAppContainerNamedObjectPath [0x779F7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x779F7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.INB.driver.Driver.initDriver(Driver.java:23)
+	at com.INB.tests.BaseTest.setUp(BaseTest.java:27)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&quot;bs-example-navbar-collapse-1&quot;]/ul/li[3]/a
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-L9LVG34&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9404, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c026a334-286a-40c5-951b-31c0cf485044
-*** Element info: {Using=xpath, value=//*[@id=&quot;bs-example-navbar-collapse-1&quot;]/ul/li[3]/a}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 19 more
-... Removed 16 stack frames
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (to check whether  this test will executed )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -280,18 +327,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginLogout')
+data.setCell(0, 1, 'test1')
 data.setCell(0, 2, 'com.INB.tests.TC_RetailLoginLogout')
-data.setCell(0, 3, 14627);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test1')
+data.setCell(1, 1, 'loginLogout')
 data.setCell(1, 2, 'com.INB.tests.TC_RetailLoginLogout')
-data.setCell(1, 3, 13548);
+data.setCell(1, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -319,32 +366,30 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.INB.tests.TC_RetailLoginLogout</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp([{password=Asdf@123, browser=microsoft, testname=loginLogout, execute=yes, username=CIF1}])</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp([{password=Asdf@123, browser=chrome, testname=loginLogout, execute=yes, username=spcb}])</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">loginLogout({password=Asdf@123, testname=loginLogout, execute=yes, browser=microsoft, username=CIF1})</span>
-                <span class="method-start">5521 ms</span>
+                <span class="method-name">loginLogout({password=Asdf@123, testname=loginLogout, execute=yes, browser=chrome, username=spcb})</span>
+                <span class="method-start">5355 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20162 ms</span>
+                <span class="method-start">5493 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp([{password=Asdf@123, browser=firefox, testname=test1, execute=yes, username=CIF2}])</span>
-                <span class="method-start">20574 ms</span>
+                <span class="method-name">setUp</span>
+                <span class="method-start">5499 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">test1({password=Asdf@123, testname=test1, execute=yes, browser=firefox, username=CIF2})</span>
-                <span class="method-start">28110 ms</span>
+                <span class="method-name">test1({password=Asdf@123, testname=test1, execute=yes, browser=chrome, username=spcb})</span>
+                <span class="method-start">5501 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">41664 ms</span>
+                <span class="method-start">5517 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

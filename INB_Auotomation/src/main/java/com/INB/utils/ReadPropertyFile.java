@@ -44,7 +44,7 @@ public final class ReadPropertyFile {
 		if(Objects.isNull(key.name().toLowerCase()) || Objects.isNull(CONFIGMAP.get(key.name().toLowerCase()))) {
 			throw new Exception("Property name "+key+" is not available in configuration file ");
 		}
-		return CONFIGMAP.get(key.name().toLowerCase());
+		return CONFIGMAP.get(key.name().toLowerCase());//returns the value of the provided key
 	}
 
 	/*

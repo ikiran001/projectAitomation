@@ -15,7 +15,7 @@ import enums.CategoryType;
 
 public final class TC_RetailLoginLogout extends BaseTest{
 
-   @FrameworkAnnotation(author = { "kiran" }, category = { CategoryType.SMOKE })
+   @FrameworkAnnotation(author = { "kiran" }, category = { CategoryType.REGRESSION })
 	@Test()
 	public void loginLogout(Map<String , String> data) throws Exception {
 

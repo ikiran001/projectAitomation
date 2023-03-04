@@ -10,9 +10,7 @@
 
   <test thread-count="1" name="Test" parallel="methods">
     <classes>
-   
-      <class name="com.INB.tests.TC_RetailLoginLogout"/>
-     
-    </classes>
+         <class name="com.INB.tests.TC_RetailLoginLogout"/>
+     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

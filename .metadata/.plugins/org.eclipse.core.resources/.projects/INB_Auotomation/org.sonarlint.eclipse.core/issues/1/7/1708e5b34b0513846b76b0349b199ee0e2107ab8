@@ -1,6 +1,6 @@
 
-	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…™ΠώώÿÿÿÿHΩRMINORZ
+‹	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…™ΠώώÿÿÿÿHλ΅RMINORZ
 CODE_SMELL
-m
-java:S1161":Add the "@Override" annotation above this method signature(ίβλλ8ς¬πÿ½0HRMAJORZ
+n
+java:S1161":Add the "@Override" annotation above this method signature(ίβλλ8ς¬πÿ½0Hμ΅RMAJORZ
 CODE_SMELL

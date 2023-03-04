@@ -11,8 +11,8 @@
       <class name="com.INB.tests.TC_RetailLoginLogout">
         <methods>
           <include name="tearDown"/>
-          <include name="test1" invocation-numbers="0"/>
-          <include name="loginLogout" invocation-numbers="0"/>
+          <include name="test1"/>
+          <include name="loginLogout"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.INB.tests.TC_RetailLoginLogout -->

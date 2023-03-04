@@ -19,3 +19,7 @@ n
 >src/test/java/com/inetbanking/PageObjects/RetailLoginPage.java,f\8\f800299c9ba649ebf6e6ce24433424a69074fa48
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+k
+;src/test/java/com/inetbanking/utilities/TestDataLoader.java,d\a\daa4af43f932633635e21f019b75df22f45ca3c4
+w
+Gsrc/test/java/com/inetbanking/testCases/TC_ClickableLinksDashboard.java,5\8\589bfb4c0ff14818f8248bbf710e3ee12722977a
